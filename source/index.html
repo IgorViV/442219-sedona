@@ -12,9 +12,9 @@
       <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
     </a>
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">
+      <span class="page-nav__toggle visually-hidden">
         Открыть меню
-      </button>
+      </span>
       <div class="page-nav__wrapper">
         <ul class="page-nav__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -49,75 +49,56 @@
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </header>
-        <ul class="reasons__list">
-          <li class="reasons__item item-reasons">
-            <label class="item-reasons__btn btn">
-              <input type="checkbox">
-              <b>Настоящий городок</b>
-              <span>№1</span>
-              <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </label>
-            <div class="item-reasons__content">
-              <img class="item-reasons__image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-1">
-              <div class="item-reasons__feature item-reasons__feature--housing">
-                <b>Жильё</b>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </div>
-              <div class="item-reasons__feature item-reasons__feature--souvenirs">
-                <b>Сувениры</b>
-                <p>Не только китайского, но и местного производства!</p>
-              </div>
-              <div class="item-reasons__feature item-reasons__feature--food">
-                <b>Еда</b>
-                <p>Всегда заказываете фирменный бургер, вы не разочаруетесь!</p>
-              </div>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <label class="item-reasons__btn btn">
-              <input type="checkbox">
-              <b>Там есть мост дьявола</b>
-              <span>№2</span>
-              <p>Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
-            </label>
-            <div class="item-reasons__content">
-              <img class="item-reasons__image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-2">
-            </div>
-          </li>
-          <li class="reasons__item">
-            <label class="item-reasons__btn btn">
-              <input type="checkbox">
-              <b>Небольшая площадь</b>
-              <span>№3</span>
-              <p>Все интересные места находятся очень близко</p>
-            </label>
-            <div class="item-reasons__content">
-              <img class="item-reasons__image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-2">
-            </div>
-          </li>
-          <li class="reasons__item">
-            <label class="item-reasons__btn">
-              <input type="checkbox">
-              <b>Красивая дорога</b>
-              <span>№4</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </label>
-            <div class="item-reasons__content">
-              <img class="item-reasons__image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-2">
-            </div>
-          </li>
-          <li class="reasons__item">
-            <label class="item-reasons__btn">
-              <input type="checkbox">
-              <b>Мало туристов</b>
-              <span>№5</span>
-              <p>Большинсво едет в Гранд Каньон и толпится там</p>
-            </label>
-            <div class="item-reasons__content">
-              <img class="item-reasons__image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-2">
-            </div>
-          </li>
-        </ul>
+        <div class="reasons__wrapper">
+          <div class="reasons__item">
+            <h3 class="visually-hidden">Причина №1</h3>
+            <b class="reasons__item-title">Настоящий городок</b>
+            <span class="reasons__item-number">№1</span>
+            <p class="reasons__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="reasons__item-image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-1">
+          </div>
+          <ul class="reasons__item-features features">
+            <li class="features__item">
+              <b class="features__item-title">Жильё</b>
+              <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item">
+              <b class="features__item-title">Сувениры</b>
+              <p class="features__item-text">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="features__item">
+              <b class="features__item-title">Еда</b>
+              <p class="features__item-text">Всегда заказываете фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+          <div class="reasons__item">
+            <h3 class="visually-hidden">Причина №2</h3>
+            <b class="reasons__item-title">Там есть мост дьявола</b>
+            <span class="reasons__item-number">№2</span>
+            <p class="reasons__item">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+            <img class="reasons__item-image" src="http://placehold.it/320x260" width="320" height="260" alt="Photo-2">
+          </div>
+          <ul class="reasons__item list-reasons">
+            <li class="list-reasons__item">
+              <h3 class="visually-hidden">Причина №3</h3>
+              <b class="list-reasons__item-title">Небольшая площадь</b>
+              <span class="list-reasons__item-number">№3</span>
+              <p class="list-reasons__item-text">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="list-reasons__item">
+              <h3 class="visually-hidden">Причина №4</h3>
+              <b class="list-reasons__item-title">Красивая дорога</b>
+              <span class="list-reasons__item-number">№4</span>
+              <p class="list-reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="list-reasons__item">
+              <h3 class="visually-hidden">Причина №5</h3>
+              <b class="list-reasons__item-title">Мало туристов</b>
+              <span class="list-reasons__item-number">№5</span>
+              <p class="list-reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
         <footer class="reasons__footer footer-reasons">
           <b class="footer-reasons__title">Заинтересовались?</b>
           <p class="footer-reasons__text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
@@ -125,33 +106,32 @@
         </footer>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
         <img class="map__image" src="http://placehold.it/320x350" width="320" height="350" alt="Карта">
         <img class="map__marker" src="http://placehold.it/28x28" width="28" height="28" alt="Маркер">
       </section>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">#visitsedona</b>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <div class="page-footer__column">
+      <b class="page-footer__title">#visitsedona</b>
+    </div>
+    <div class="page-footer__column">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__column">
+      <b class="page-footer__title">Разработано</b>
+      <a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
   </body>
