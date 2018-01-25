@@ -12,9 +12,9 @@
       <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="City of Sedona">
     </a>
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">
+      <span class="page-nav__toggle visually-hidden">
         Открыть меню
-      </button>
+      </span>
       <div class="page-nav__wrapper">
         <ul class="page-nav__list site-list">
           <li class="site-list__item">
@@ -39,14 +39,14 @@
       <div class="main__banner main__banner--inner-page">
         <img class="main__banner-image" src="http://placehold.it/230x40" width="230" height="40" alt="Sedona">
       </div>
-      <section class="main__content">
-        <h2 class="main__content-title">Оставьте свой отзыв</h2>
-        <p class="main__content-intro">
+      <section class="content">
+        <h2 class="content__title">Оставьте свой отзыв</h2>
+        <p class="content__intro">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопремечательностях
         </p>
-        <form class="main__content-form form" action="#" method="post">
+        <form class="content__form form" action="#" method="post">
           <fieldset class="form__group">
-            <b class="form__group-title">Представьтесь:</b>
+            <legend class="form__group-title">Представьтесь:</legend>
             <label class="form__group-label" for="name">Имя<sup>*</sup>:</label>
             <input class="form__group-input" id="name" type="text" name="name" placeholder="Петр" required>
             <label class="form__group-label" for="first-name">Фамилия<sup>*</sup>:</label>
@@ -55,67 +55,66 @@
             <input class="form__group-input" id="last-name" type="text" name="last-name" placeholder="Александрович">
           </fieldset>
           <fieldset class="form__group">
-            <b class="form__group-title">Контактная информация:</b>
+            <legend class="form__group-title">Контактная информация:</legend>
             <label class="form__group-label" for="phone">Контактный телефон<sup>*</sup>:</label>
             <input class="form__group-input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
             <label class="form__group-label" for="email">Электронная почта<sup>*</sup>:</label>
             <input class="form__group-input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="form__group">
-            <b class="form__group-title">Ваше общее впечатление:</b>
+            <legend class="form__group-title">Ваше общее впечатление:</legend>
             <label class="form__group-label"><input class="form__group-input" type="radio" name="impression" value="good" checked>Скорее положительное</label>
             <label class="form__group-label"><input class="form__group-input" type="radio" name="impression" value="bad">Скорее отрицательное</label>
             <label class="form__group-label"><input class="form__group-input" type="radio" name="impression" value="difficult">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__group">
-            <b class="form__group-title">Посещенные достопримечательности:</b>
+            <legend class="form__group-title">Посещенные достопримечательности:</legend>
             <label class="form__group-label"><input class="form__group-input" type="checkbox" name="bridge">Мост дьявола</label>
             <label class="form__group-label"><input class="form__group-input" type="checkbox" name="slide-park">Слайд-парк</label>
             <label class="form__group-label"><input class="form__group-input" type="checkbox" name="mountain">Гора-колокол</label>
             <label class="form__group-label"><input class="form__group-input" type="checkbox" name="red-rocks">Красные скалы</label>
           </fieldset>
           <fieldset class="form__group">
-            <b class="form__group-title">Опишите свои эмоции:</b>
+            <legend class="form__group-title">Опишите свои эмоции:</legend>
             <textarea class="form__group-textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__button btn" type="submit">Отправить отзыв</button>
         </form>
-        <div class="failure-popup popup">
-          <b>Что-то пошло не так!</b>
-          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="popup__btn btn" type="button">Ок</button>
-        </div>
-        <div class="success-popup popup">
-          <b>Ваш отзыв отправлен!</b>
-          <p>Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="popup__btn btn" type="button">Закрыть окно</button>
-        </div>
       </section>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">#visitsedona</b>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <div class="page-footer__column">
+      <b class="page-footer__title">#visitsedona</b>
+    </div>
+    <div class="page-footer__column">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link-social page-footer__link-social--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__column">
+      <b class="page-footer__title">Разработано</b>
+      <a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
+
+  <div class="popup popup--failure">
+    <b>Что-то пошло не так!</b>
+    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="popup__btn btn" type="button">Ок</button>
+  </div>
+  <div class="popup popup--success">
+    <b>Ваш отзыв отправлен!</b>
+    <p>Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="popup__btn btn" type="button">Закрыть окно</button>
+  </div>
   </body>
 </html>
