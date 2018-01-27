@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff") format("woff"),
+         url("../fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+    src: url("../fonts/ptsansbold.woff") format("woff"),
+         url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+html {
+  .border-box();
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+}

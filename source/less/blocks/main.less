@@ -1,11 +1,36 @@
 .main {
   display: block;
   .reset();
-  background-color: #eeeeee;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
 }
 
 .main__wrapper {
   width: 320px;
+  .reset();
+  .center();
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.main__banner {
+  .reset();
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-color: #cccccc;
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center, center center;
+  background-repeat: no-repeat;
+}
+
+.main__banner-image {
+  display: block;
+  width: 282px;
+  height: 214px;
   .reset();
   .center();
 }
