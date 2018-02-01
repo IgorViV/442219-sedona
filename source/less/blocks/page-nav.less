@@ -1,21 +1,60 @@
 .page-nav {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
   .reset();
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: 1px solid red;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-nav__logo {
+  position: relative;
+  order: 2;
+  height: 56px;
+  .reset();
+}
+
+.page-nav__logo-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  width: 102px;
+  height: 83px;
+  transform: translateX(-50%);
 }
 
 .page-nav__toggle {
   position: absolute;
+  top: 17px;
+  right: 20px;
   width: 23px;
   height: 23px;
 }
 
-.page-nav__wrapper {
-  .reset(); /* временная вставка, для исключения пустого блока */
-}
-
 .page-nav__list {
   .reset();
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav {
+    width: auto;
+    .center();
+  }
+
+  .page-nav__logo {
+    position: static;
+    height: 0;
+  }
+
+  .page-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav {
+    max-width: 1200px;
+  }
 }
