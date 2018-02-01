@@ -1,13 +1,15 @@
 .reasons {
+  display: flex;
+  flex-direction: column;
   .reset();
   text-align: center;
   color: #000000;
   background-color: #ffffff;
-  border: 1px solid blue;
 }
 
 .reasons__header {
   .reset();
+  .center();
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 33px;
@@ -15,36 +17,49 @@
 
 .reasons__slogan {
   .reset();
-  font-size: 16px;
+  .center();
+  font-size: 18px;
+}
+
+.reasons__intro {
+  display: flex;
+  .reset();
+  .center();
 }
 
 .reasons__wrapper {
+  display: flex;
+  flex-direction: column;
   .reset();/* временная вставка, для исключения пустого блока */
+  border: 1px solid red;
 }
 
 .reasons__item {
+  width: auto;
   .reset();
-  padding-top: 66px;
   color: #ffffff;
   background-color: #81b3d2;
+  border: 1px solid #000000;
 }
 
 .reasons__item:first-child {
+  background-size: 380px auto;
   background-image: url("../img/bg-triangle.svg");
-  background-position: top center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
 .reasons__item-title {
   display: block;
   .reset();
+  padding-top: 66px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 16px;
 }
 
 .reasons__item-namber {
-  .reset();/* временная вставка, для исключения пустого блока */
+  display: block;
 }
 
 .reasons__item-text {
@@ -55,7 +70,58 @@
 
 .reasons__item-image {
   display: block;
-  width: 316px;
   height: 260px;
   .reset();
+  .center();
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__item:first-child {
+    background-image: none;
+  }
+
+  .reasons__header {
+    width: 540px;
+  }
+
+  .reasons__slogan {
+    width: 460px;
+    font-size: 21px;
+  }
+
+  .reasons__item {
+    display: flex;
+    height: 255px;
+    .reset();
+  }
+
+  .reasons__item:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  .reasons__item-wrapper {
+    width: 256px;
+  }
+
+  .reasons__item-title {
+    padding-top: 0;
+  }
+
+  .reasons__item-image {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__header {
+    width: 800px;
+  }
+
+  .reasons__item {
+    height: 258px;
+  }
+
+  .reasons__item-wrapper {
+    width: 400px;
+  }
 }
