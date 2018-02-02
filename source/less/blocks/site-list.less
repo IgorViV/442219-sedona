@@ -55,25 +55,16 @@
 
   .site-list__item {
     flex-basis: 150px;
-    margin: auto;
     border-top: none;
     border-bottom: none;
   }
 
   .site-list__item:nth-child(2) {
-    flex-grow: 1;
-
-    a {
-      padding-right: 60px;
-    }
+    margin-right: auto;
   }
 
   .site-list__item:nth-child(3) {
-    flex-grow: 1;
-
-    a {
-      padding-left: 60px;
-    }
+    margin-left: auto;
   }
 
   .site-list__item--current a {
@@ -108,5 +99,7 @@
 }
 
 @media (min-width: @desktop-width) {
-
+  .site-list__item {
+    flex-basis: 230px;
+  }
 }

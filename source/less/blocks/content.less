@@ -1,4 +1,6 @@
 .content {
+  display: flex;
+  flex-direction: column;
   .reset();
   padding-left: 20px;
   padding-right: 20px;
@@ -13,9 +15,44 @@
 }
 
 .content__intro {
+  .reset();
   line-height: 24px;
 }
 
 .content__form {
   .reset();
+}
+
+
+@media (min-width: @tablet-width) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 114px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .content__title,
+  .content__intro {
+    width: 100%;
+  }
+
+  .content__title {
+    margin-bottom: 26px;
+    font-size: 30px;
+  }
+
+  .content__intro {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
 }

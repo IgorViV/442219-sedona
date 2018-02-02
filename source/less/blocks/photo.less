@@ -28,3 +28,25 @@
 .photo__author {
   font-style: normal;
 }
+
+@media (min-width: @tablet-width) {
+  .photo {
+    flex-basis: 325px;
+    //flex-grow: 1;
+  }
+
+  .photo--first {
+    flex-basis: 650px;
+    //flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    flex-basis: 399px;
+  }
+
+  .photo--first {
+    flex-basis: 1200px;
+  }
+}
