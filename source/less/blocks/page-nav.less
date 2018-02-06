@@ -1,28 +1,23 @@
 .page-nav {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
+  width: 100%;
   .reset();
-  color: #000000;
-  background-color: #ffffff;
+  padding-bottom: 56px;
 }
 
 .page-nav__logo {
-  position: relative;
-  order: 2;
-  height: 56px;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  z-index: 1000;
+  height: 83px;
   .reset();
+  transform: translateX(-50%);
 }
 
 .page-nav__logo-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 1000;
   width: 102px;
   height: 83px;
-  transform: translateX(-50%);
 }
 
 .page-nav__toggle {
@@ -39,13 +34,11 @@
 
 @media (min-width: @tablet-width) {
   .page-nav {
-    width: auto;
-    .center();
+    padding-bottom: 0;
   }
 
-  .page-nav__logo {
-    position: static;
-    height: 0;
+  .page-nav__logo-image {
+    top: 0;
   }
 
   .page-nav__toggle {
@@ -54,7 +47,5 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-nav {
-    max-width: 1200px;
-  }
+
 }

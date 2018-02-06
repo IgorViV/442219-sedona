@@ -1,7 +1,6 @@
 .video {
   width: 100%;
   .reset();
-  border: 1px solid goldenrod;
 }
 
 .video__title {
@@ -9,14 +8,13 @@
 }
 
 .video__content {
-  width: 316px;
-  .reset();
-  margin-left: -20px;
+  width: 280px;
 }
 
 @media (min-width: @tablet-width) {
   .video {
     padding-top: 55px;
+    background-color: #cccccc;
   }
 
   .video__title {
@@ -29,6 +27,10 @@
     margin-bottom: 70px;
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .video__content {
+    width: 100%;
   }
 }
 
