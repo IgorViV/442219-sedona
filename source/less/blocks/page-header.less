@@ -2,23 +2,16 @@
   width: 320px;
   .center();
   color: #000000;
-  background-color: #ffffff;
-  border: 1px solid green;
 }
 
-.page-header__logo {
-  position: relative;
-  display: block;
-  height: 56px;
-  .reset();
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+  }
 }
 
-.page-header__logo-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 1000;
-  width: 102px;
-  height: 83px;
-  transform: translateX(-50%);
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }

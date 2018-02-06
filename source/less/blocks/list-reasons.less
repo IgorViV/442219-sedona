@@ -1,3 +1,95 @@
 .list-reasons {
-  .reset(); /* временная вставка, для исключения пустого блока */
+  display: flex;
+  flex-direction: column;
+  .reset();
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style: none;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.list-reasons__item {
+  .reset();
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.list-reasons__item:last-child {
+  border-bottom: none;
+}
+
+.list-reasons__item-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+
+}
+
+.list-reasons__item-number {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.list-reasons__item-text {
+  .reset();
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0;
+  line-height: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .list-reasons {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .list-reasons__item {
+    width: 256px;
+    padding-top: 46px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 46px;
+    border-bottom: none;
+  }
+
+  .list-reasons__item-title {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 21px;
+  }
+
+  .list-reasons__item-number {
+    margin-bottom: 26px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-reasons__item {
+    flex-grow: 1;
+    padding-top: 48px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 68px;
+  }
+
+  .list-reasons__item-title {
+    margin-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 21px;
+  }
+
+  .list-reasons__item-number {
+    margin-bottom: 28px;
+    line-height: 21px;
+  }
 }

@@ -1,3 +1,42 @@
 .footer-reasons {
-  .reset(); /* временная вставка, для исключения пустого блока */
+  .reset();
+  .center();
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 48px;
+}
+
+.footer-reasons__title {
+  display: block;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.footer-reasons__text {
+  margin-bottom: 40px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.footer-reasons__btn {
+  padding-top: 18px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-reasons {
+    width: 500px;
+    padding-top: 54px;
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-reasons {
+    padding-bottom: 66px;
+  }
 }

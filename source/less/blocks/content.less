@@ -1,21 +1,34 @@
 .content {
+  display: flex;
+  flex-direction: column;
   .reset();
+  padding-top: 23px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
-  border: 1px solid blue;
-}
-
-.content__title {
-  font-size: 18px;
-}
-
-.content__intro {
-  line-height: 24px;
 }
 
 .content__form {
   .reset();
+}
+
+
+@media (min-width: @tablet-width) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
 }

@@ -2,39 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>City of Sedona</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
-      </a>
       <nav class="page-nav">
-        <span class="page-nav__toggle visually-hidden">
-          Открыть меню
-        </span>
-        <div class="page-nav__wrapper">
-          <ul class="page-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <a class="page-nav__logo">
+          <img class="page-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Logotype of Sedona">
+        </a>
+        <ul class="page-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="page-nav__toggle page-nav__toggle--off" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
       </nav>
     </header>
     <main class="main">
-      <div class="main__wrapper">
         <h1 class="visually-hidden">Sedona</h1>
         <div class="main__banner">
           <img class="main__banner-image" src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome Sedona">
@@ -51,13 +51,15 @@
           </header>
           <div class="reasons__wrapper">
             <div class="reasons__item">
-              <h3 class="visually-hidden">Причина №1</h3>
-              <b class="reasons__item-title">Настоящий городок</b>
-              <span class="reasons__item-number">№1</span>
-              <p class="reasons__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="reasons__item-wrapper">
+                  <h3 class="visually-hidden">Причина №1</h3>
+                  <b class="reasons__item-title">Настоящий городок</b>
+                  <span class="reasons__item-number">№1</span>
+                  <p class="reasons__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
               <img class="reasons__item-image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Photo-1">
             </div>
-            <ul class="reasons__item-features features">
+            <ul class="reasons__item features">
               <li class="features__item">
                 <b class="features__item-title">Жильё</b>
                 <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -72,10 +74,12 @@
               </li>
             </ul>
             <div class="reasons__item">
-              <h3 class="visually-hidden">Причина №2</h3>
-              <b class="reasons__item-title">Там есть мост дьявола</b>
-              <span class="reasons__item-number">№2</span>
-              <p class="reasons__item">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+              <div class="reasons__item-wrapper">
+                <h3 class="visually-hidden">Причина №2</h3>
+                <b class="reasons__item-title">Там есть мост дьявола</b>
+                <span class="reasons__item-number">№2</span>
+                <p class="reasons__item-text">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+              </div>
               <img class="reasons__item-image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Photo-2">
             </div>
             <ul class="reasons__item list-reasons">
@@ -110,7 +114,6 @@
           <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
           <img class="map__marker" src="http://placehold.it/28x28" width="28" height="28" alt="Маркер">
         </section>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__column">
@@ -130,7 +133,7 @@
         </ul>
       </div>
       <div class="page-footer__column">
-        <b class="page-footer__title">Разработано</b>
+        <b class="page-footer__title-copyright">Разработано</b>
         <a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>

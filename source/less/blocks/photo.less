@@ -1,11 +1,7 @@
 .photo {
   .reset();
   background-color: antiquewhite;
-  border: 1px solid green;
-}
-
-.photo__content {
-  .reset();
+  //border: 1px solid green;
 }
 
 .photo__link {
@@ -17,14 +13,27 @@
   .reset();
 }
 
-.photo__image img {
-  width: 274px;
-}
-
-.photo__title {
-  .reset();/* временная вставка, для исключения пустого блока */
-}
-
 .photo__author {
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 50%;
+  }
+
+  .photo:nth-of-type(1) {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    flex-grow: 1;
+    width: 30%;
+  }
+
+  .photo:nth-of-type(1) {
+    width: 100%;
+  }
 }

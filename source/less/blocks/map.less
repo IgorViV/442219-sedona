@@ -2,14 +2,14 @@
   position: relative;
   .reset();
   background-color: #cccccc;
-  border: 1px solid orange;
 }
 
 .map__image {
   display: block;
-  width: 316px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   .reset();
+  .center();
 }
 
 .map__marker {
@@ -19,4 +19,12 @@
   display: block;
   transform: translate(-50%, -50%);
   z-index: 1000;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
 }

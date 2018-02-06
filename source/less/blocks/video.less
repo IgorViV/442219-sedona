@@ -1,13 +1,49 @@
 .video {
+  width: 100%;
   .reset();
 }
 
 .video__title {
-  .reset(); /* временная вставка, для исключения пустого блока */
+  font-size: 18px;
 }
 
 .video__content {
-  width: 316px;
-  .reset();
-  margin-left: -20px;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-top: 55px;
+    background-color: #cccccc;
+  }
+
+  .video__title {
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 30px;
+  }
+
+  .video__intro {
+    margin-bottom: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .video__content {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video__title,
+  .video__intro {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
 }
