@@ -1,7 +1,19 @@
 .photo {
   .reset();
-  background-color: antiquewhite;
-  //border: 1px solid green;
+  .center();
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo:nth-child(4) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__content {
+  position: relative;
 }
 
 .photo__link {
@@ -9,21 +21,82 @@
   color: #000000;
 }
 
+.photo__title {
+  display: block;
+  width: 100%;
+  .reset();
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
 .photo__image {
+  display: block;
   .reset();
 }
 
 .photo__author {
+  display: block;
+  .reset();
   font-style: normal;
+  line-height: 24px;
+  text-transform: none;
+  text-align: left;
+  color: #333333;
+}
+
+.photo__like-counter {
+  display: block;
+  .reset();
+  padding-top: 10px;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
   .photo {
     width: 50%;
+    .reset();
+    border-top: none;
   }
 
-  .photo:nth-of-type(1) {
+  .photo:nth-child(1) {
     width: 100%;
+  }
+
+  .photo:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .photo__signature {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .photo:nth-child(3) .photo__signature {
+    background-color: #eaeaea;
+  }
+
+  .photo__title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .photo__like-counter {
+    margin-left: auto;
   }
 }
 
@@ -35,5 +108,20 @@
 
   .photo:nth-of-type(1) {
     width: 100%;
+  }
+
+  .photo__signature {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    background-color: rgba(72, 43, 21, 0.3);
+  }
+
+  .photo:nth-child(3) .photo__signature {
+    background-color: rgba(72, 43, 21, 0.3);
+  }
+
+  .photo__author {
+    color: #ffffff;
   }
 }

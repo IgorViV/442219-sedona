@@ -1,36 +1,64 @@
 .video {
   width: 100%;
   .reset();
+  padding-top: 36px;
 }
 
 .video__title {
+  display: block;
+  .reset();
+  margin-bottom: 34px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 700;
   font-size: 18px;
 }
 
+.video__intro {
+  .reset();
+  margin-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 24px;
+  color: #333333;
+}
+
 .video__content {
-  width: 280px;
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size: cover;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .video {
-    padding-top: 55px;
-    background-color: #cccccc;
+    padding-top: 65px;
+  }
+
+  .video__title,
+  .video__intro {
+    width: 500px;
   }
 
   .video__title {
-    padding-left: 110px;
-    padding-right: 110px;
+    .center();
+    margin-bottom: 23px;
     font-size: 30px;
   }
 
   .video__intro {
-    margin-bottom: 70px;
-    padding-left: 110px;
-    padding-right: 110px;
+    .center();
+    margin-bottom: 75px;
   }
 
   .video__content {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -39,11 +67,10 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 70px;
   }
 
-  .video__title,
-  .video__intro {
-    padding-left: 180px;
-    padding-right: 180px;
+  .video__title {
+    margin-bottom: 30px;
   }
 }
