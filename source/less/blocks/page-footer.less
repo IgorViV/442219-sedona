@@ -73,7 +73,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
+    width: 648px;
+    .center();
     padding-top: 35px;
     padding-left: 0;
     padding-right: 0;
@@ -84,6 +85,10 @@
     flex-basis: 256px;
     margin-bottom: 0;
   }
+
+  .page-footer__column:nth-child(1) {
+    text-align: left;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -91,8 +96,8 @@
     width: 1200px;
   }
 
-  .page-footer__column {
-    //flex-basis: 370px;
+  .page-footer__column:nth-child(1) {
+    text-align: center;
   }
 
   .page-footer__column:nth-child(2) {
