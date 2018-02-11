@@ -1,15 +1,26 @@
 .map {
   position: relative;
+  width: 320px;
+  height: 350px;
   .reset();
+  background-size: cover;
   background-color: #cccccc;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.map__image {
-  display: block;
-  width: 100%;
-  height: auto;
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.main__banner {
   .reset();
-  .center();
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .map__marker {
@@ -22,9 +33,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .map {
+    width: 100%;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
 
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
 
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
 }

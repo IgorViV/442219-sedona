@@ -11,7 +11,11 @@
   <header class="page-header">
     <nav class="page-nav page-nav--nojs">
       <a class="page-nav__logo" href="index.html">
-        <img class="page-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Logotype of Sedona">
+        </picture>
       </a>
       <ul class="page-nav__list site-list">
         <li class="site-list__item">
