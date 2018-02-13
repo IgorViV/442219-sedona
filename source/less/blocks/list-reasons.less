@@ -28,9 +28,27 @@
 }
 
 .list-reasons__item-number {
-  display: block;
+  position: relative;
+  display: inline-block;
   margin-bottom: 20px;
   line-height: 21px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 9px;
+    border: 1px solid #a8a8a8;
+  }
+
+  &::before {
+    left: -15px;
+  }
+
+  &::after {
+    right: -15px;
+  }
 }
 
 .list-reasons__item-text {

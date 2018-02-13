@@ -181,11 +181,25 @@
             <p class="video__intro">
               Смотрите видеопрезентацию скорее за билетами, пока они не подоражали в очередной раз!
             </p>
-            <video class="video__content" width="320" height="200" controls="controls">
+            <video class="video__content" width="320" height="200">
               <source src="img/video.mp4" type="video/mp4">
               <source src="img/video.ogv" type="video/ogg">
               <source src="img/video.webm" type="video/webm">
             </video>
+            <div class="video__controls">
+              <div class="video__controls-range"></div>
+              <div class="video__controls-buttons">
+                <button class="video__controls-replay" type="button">
+                  <img src="img/icon-video-replay.svg" width="16" height="20" alt="Replay">
+                </button>
+                <button class="video__controls-subtitles" type="button">
+                  <img src="img/icon-video-subtitles.svg" width="32" height="20" alt="Replay">
+                </button>
+                <button class="video__controls-fullscreen" type="button">
+                  <img src="img/icon-video-fullscreen.svg" width="20" height="20" alt="Replay">
+                </button>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -209,7 +223,9 @@
     </div>
     <div class="page-footer__column">
       <b class="page-footer__title-copyright">Разработано</b>
-      <a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
+      </a>
     </div>
   </footer>
   <script src="js/menu-script.js"></script>

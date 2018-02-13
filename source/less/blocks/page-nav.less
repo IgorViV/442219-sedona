@@ -28,12 +28,14 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
-  border: none;
   background-color: transparent;
+  border: none;
+  outline: none;
 
   &:hover,
   &:active {
     background-color: transparent;
+    border: none;
   }
 }
 
@@ -51,6 +53,7 @@
 .page-nav--closed .page-nav__toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .page-nav--opened .page-nav__toggle {
@@ -72,11 +75,6 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    //background-color: rgba(255, 255, 255, 0.3);
   }
 }
 
