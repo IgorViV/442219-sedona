@@ -8,6 +8,7 @@
     <title>City of Sedona</title>
   </head>
   <body>
+  <div class="page-wrapper">
   <header class="page-header">
     <nav class="page-nav page-nav--nojs">
       <a class="page-nav__logo" href="index.html">
@@ -75,7 +76,11 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title">Контактная информация:</legend>
+            <legend class="form__group-title">
+              <span class="form__group-tite-text">
+                Контактная информация:
+              </span>
+            </legend>
             <ul class="form__group-wrapper">
               <li class="form__input-block form__input-block--contact">
                 <label class="form__label form__label--contact" for="phone">
@@ -92,7 +97,9 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title">Ваше общее впечатление:</legend>
+            <legend class="form__group-title">
+              Ваше общее впечатление:
+            </legend>
             <ul class="form__group-wrapper">
               <li class="form__input-block form__input-block--impression">
                 <input class="form__input form__input--impression" type="radio" id="good" name="impression" value="good" checked>
@@ -115,7 +122,11 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title">Посещенные<br> достопримечательности:</legend>
+            <legend class="form__group-title">
+              <span class="form__group-tite-text">
+                Посещенные<br> достопримечательности:
+              </span>
+            </legend>
             <ul class="form__group-wrapper">
               <li class="form__input-block form__input-block--place">
                 <input class="form__input form__input--place" type="checkbox" id="bridge" name="bridge" checked>
@@ -144,7 +155,11 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__group-title">Опишите свои эмоции:</legend>
+            <legend class="form__group-title">
+              <span class="form__group-tite-text">
+                Опишите свои эмоции:
+              </span>
+            </legend>
             <textarea class="form__group-textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="form__button-wrapper">
@@ -192,5 +207,6 @@
     <button class="popup__btn btn" type="button">Закрыть окно</button>
   </div>
   <script src="js/menu-script.js"></script>
+  </div>
   </body>
 </html>

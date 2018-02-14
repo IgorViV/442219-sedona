@@ -71,7 +71,8 @@
     left: 22px;
     right: 22px;
     content: "";
-    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-50%);
   }
 
@@ -80,7 +81,9 @@
     top: 50%;
     left: 60px;
     content: "";
-    border: 5px solid #ffffff;
+    height: 1px;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
     border-radius: 50%;
     transform: translateY(-50%);
   }
@@ -100,6 +103,10 @@
     background-color: transparent;
     border: none;
     outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .video__controls-replay {
