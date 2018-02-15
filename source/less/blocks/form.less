@@ -95,11 +95,29 @@
 }
 
 .form__input-block--contact {
+  position: relative;
   margin-bottom: 20px;
+
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
 .form__input-block--contact:last-child {
   margin-bottom: 8px;
+
+  span {
+    background-image: url("../img/icon-mail.svg");
+  }
 }
 
 .form__label--contact {
