@@ -12,25 +12,30 @@
 
 .list-reasons__item {
   .reset();
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   border-bottom: 1px solid #d6d6d6;
-}
 
-.list-reasons__item:last-child {
-  border-bottom: none;
+  &:nth-child(2) {
+    padding-top: 25px;
+  }
+
+  &:last-child {
+    padding-top: 26px;
+    border-bottom: none;
+  }
 }
 
 .list-reasons__item-title {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 18px;
 }
 
 .list-reasons__item-number {
   position: relative;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: 21px;
 
   &::before,
@@ -52,9 +57,9 @@
 }
 
 .list-reasons__item-text {
+  width: 250px;
   .reset();
-  padding-left: 15px;
-  padding-right: 15px;
+  .center();
   padding-bottom: 0;
   line-height: 21px;
 }
@@ -70,43 +75,55 @@
   .list-reasons__item {
     width: 256px;
     padding-top: 46px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 46px;
+    padding-bottom: 45px;
     border-bottom: none;
+
+    &:nth-child(2) {
+      padding-top: 46px;
+    }
+
+    &:last-child {
+      padding-top: 46px;
+    }
   }
 
   .list-reasons__item-title {
-    margin-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 130px;
+    .center();
+    margin-bottom: 5px;
     font-size: 21px;
   }
 
   .list-reasons__item-number {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
     line-height: 21px;
+  }
+
+  .list-reasons__item-text {
+    width: 165px;
+    .center();
   }
 }
 
 @media (min-width: @desktop-width) {
   .list-reasons__item {
     flex-grow: 1;
-    padding-top: 48px;
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 68px;
   }
 
   .list-reasons__item-title {
-    margin-bottom: 15px;
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-bottom: 6px;
     font-size: 21px;
   }
 
   .list-reasons__item-number {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     line-height: 21px;
+  }
+
+  .list-reasons__item-text {
+    width: 270px;
   }
 }

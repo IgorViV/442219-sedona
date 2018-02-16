@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   .reset();
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
@@ -12,27 +12,31 @@
 
 .features__item {
   .reset();
-  padding-top: 35px;
+  padding-top: 28px;
   padding-left: 50px;
   text-align: left;
-  background-size: 40px 40px;
+  background-size: 40px 38px;
   background-image: url("../img/icon-house.svg");
-  background-position: 0 25px;
+  background-position: 0 20px;
   background-repeat: no-repeat;
-}
 
-.features__item:nth-child(2) {
-  background-image: url("../img/icon-gift.svg");
-}
+  &:nth-child(2) {
+    background-size: 34px 40px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: 4px 18px;
+  }
 
-.features__item:nth-child(3) {
-  background-image: url("../img/icon-burger.svg");
+  &:nth-child(3) {
+    background-size: 40px 36px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: 0 22px;
+  }
 }
 
 .features__item-title {
   display: block;
   .reset();
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 18px;
 }
 
@@ -45,33 +49,49 @@
   .features {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin-bottom: 62px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .features__item {
     width: 256px;
-    padding-top: 160px;
+    padding-top: 158px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 0;
     text-align: center;
     background-size: 76px 76px;
     background-position: center 58px;
+
+    &:nth-child(2) {
+      order: 1;
+      background-size: 76px 76px;
+      background-position: center 58px;
+    }
+
+    &:nth-child(3) {
+      background-size: 76px 76px;
+      background-position: center 58px;
+    }
   }
 
-  .features__item:nth-child(2) {
-    order: 1;
+  .features__item-title {
+    font-size: 21px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .features {
+    margin-bottom: 0px;
+  }
+
   .features__item {
     flex-grow: 1;
     padding-top: 160px;
     padding-left: 55px;
     padding-right: 55px;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
   }
 }
