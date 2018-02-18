@@ -28,7 +28,7 @@
   color: #333333;
 }
 
-.content__intro br {
+.content__intro br:first-child {
   display: none;
 }
 
@@ -63,11 +63,13 @@
   }
 
   .content__intro {
-    .reset();
-    line-height: 24px;
-  }
-  .content__intro br {
-    display: inline;
+    br:first-child {
+      display: inline;
+    }
+
+    br:last-child {
+      display: none;
+    }
   }
 
   .content__wrapper {
@@ -102,5 +104,4 @@
     .reset();
     line-height: 24px;
   }
-
 }

@@ -20,16 +20,30 @@
   background-position: 0 20px;
   background-repeat: no-repeat;
 
+  &:nth-child(1) {
+    .features__item-text-br {
+      display: none;
+    }
+  }
+
   &:nth-child(2) {
     background-size: 34px 40px;
     background-image: url("../img/icon-gift.svg");
     background-position: 4px 18px;
+
+    .features__item-text-br {
+      display: inline;
+    }
   }
 
   &:nth-child(3) {
     background-size: 40px 36px;
     background-image: url("../img/icon-burger.svg");
     background-position: 0 22px;
+
+    .features__item-text-br {
+      display: none;
+    }
   }
 }
 
@@ -64,6 +78,12 @@
     background-size: 76px 76px;
     background-position: center 58px;
 
+    &:nth-child(1) {
+      .features__item-text-br {
+        display: inline;
+      }
+    }
+
     &:nth-child(2) {
       order: 1;
       background-size: 76px 76px;
@@ -73,6 +93,10 @@
     &:nth-child(3) {
       background-size: 76px 76px;
       background-position: center 58px;
+
+      .features__item-text-br {
+        display: inline;
+      }
     }
   }
 
@@ -93,5 +117,23 @@
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 83px;
+
+    &:nth-child(1) {
+      .features__item-text-br {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      .features__item-text-br {
+        display: inline;
+      }
+    }
+
+    &:nth-child(3) {
+      .features__item-text-br {
+        display: none;
+      }
+    }
   }
 }
