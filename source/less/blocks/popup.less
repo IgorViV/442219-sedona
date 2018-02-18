@@ -1,10 +1,21 @@
 .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
   display: none;
   width: 320px;
   .center();
   padding-top: 44px;
   padding-bottom: 36px;
   text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 7px #dbdbdb;
+  transform: translate(-50%, -50%);
+}
+
+.popup--failure {
+  z-index: 101;
 }
 
 .popup b {
@@ -84,6 +95,7 @@
     padding-top: 18px;
     padding-bottom: 16px;
     font-size: 21px;
+    cursor: pointer;
   }
 
   .popup--success {

@@ -2,13 +2,14 @@
   position: relative;
   width: 100%;
   .reset();
-  padding-top: 36px;
+  margin-bottom: 97px;
+  padding-top: 32px;
 }
 
 .video__title {
   display: block;
   .reset();
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 700;
@@ -17,7 +18,7 @@
 
 .video__intro {
   .reset();
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding-left: 40px;
   padding-right: 40px;
   line-height: 24px;
@@ -96,44 +97,47 @@
   height: 68px;
   .reset();
   background-color: #f2f2f2;
+}
 
-  button {
-    width: 20px;
-    .reset();
-    background-color: transparent;
-    border: none;
-    outline: none;
+.video__controls-replay,
+.video__controls-subtitles,
+.video__controls-fullscreen {
+  width: 20px;
+  .reset();
+  background-color: transparent;
+  border: none;
+  outline: none;
 
-    &:hover {
-      cursor: pointer;
+  &:hover {
+    cursor: pointer;
 
-      svg {
-        fill: #333333;
-      }
-    }
-
-    &:active svg {
-      fill: #c1c1c1;
+    svg {
+      fill: #333333;
     }
   }
 
-  .video__controls-replay {
-    margin-left: 24px;
-    margin-right: auto;
+  &:active svg {
+    fill: #c1c1c1;
   }
+}
 
-  .video__controls-subtitles {
-    width: 32px;
-    margin-right: 31px;
-  }
+.video__controls-replay {
+  margin-left: 24px;
+  margin-right: auto;
+}
 
-  .video__controls-fullscreen {
-    margin-right: 24px;
-  }
+.video__controls-subtitles {
+  width: 32px;
+  margin-right: 31px;
+}
+
+.video__controls-fullscreen {
+  margin-right: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .video {
+    margin-bottom: 33px;
     padding-top: 65px;
   }
 
@@ -144,13 +148,13 @@
 
   .video__title {
     .center();
-    margin-bottom: 23px;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
   .video__intro {
     .center();
-    margin-bottom: 75px;
+    margin-bottom: 74px;
   }
 
   .video__content {
@@ -196,8 +200,20 @@
     background-color: transparent;
   }
 
-  button svg {
+  .video__controls-replay,
+  .video__controls-subtitles,
+  .video__controls-fullscreen {
+    svg {
       fill: #ffffff;
+    }
+  }
+
+  .video__controls-replay {
+    margin-left: 30px;
+  }
+
+  .video__controls-fullscreen {
+    margin-right: 41px;
   }
 }
 
@@ -206,11 +222,16 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 79px;
     padding-top: 70px;
   }
 
   .video__title {
     margin-bottom: 30px;
+  }
+
+  .video__intro {
+    margin-bottom: 72px;
   }
 
   .video__content {
