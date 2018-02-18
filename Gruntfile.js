@@ -49,6 +49,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+      images: {
+        options: {
+          optimizationlevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          source: ["build/img/**/*.{png, jpg, svg}"]
+        }]
+      }
+    },
     svgstore: {
       options: {
         includeTitleElement: false
@@ -101,11 +113,12 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
   grunt.registerTask("build", [
-    "copy",
+    "clean",
     "copy",
     "less",
     "postcss",
     "csso",
+    "imagemin",
     "svgstore",
     "posthtml"
   ]);
