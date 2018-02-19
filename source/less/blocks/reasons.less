@@ -54,6 +54,10 @@
     .reasons__item-title-br {
       display: none;
     }
+
+    .reasons__item-text-br {
+      display: none;
+    }
   }
 }
 
@@ -179,6 +183,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reasons__item:nth-child(3) {
+    .reasons__item-text-br {
+      display: inline;
+    }
+  }
+
+
   .reasons__header {
     padding-left: 330px;
     padding-right: 330px;
