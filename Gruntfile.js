@@ -11,8 +11,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "source",
           src: [
-            "fonts/**/*.{woff, woff2}",
-            "img/**",
+            "fonts/**/*.{woff,woff2}",
             "js/**"
           ],
           dest: "build"
@@ -55,12 +54,14 @@ module.exports = function(grunt) {
           optimizationlevel: 3,
           progressive: true
         },
-        files: [{
-          expand: true,
-          cwd: 'src/img',
-          src: ['**/*.{jpg,png,svg}'],
-          dest: 'build/img'
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: 'source/img',
+            src: ['**/*.{jpg,png,svg}'],
+            dest: 'build/img'
+          }
+        ]
       }
     },
     svgstore: {
