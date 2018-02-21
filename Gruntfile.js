@@ -64,6 +64,19 @@ module.exports = function(grunt) {
         ]
       }
     },
+    cwebp: {
+      images: {
+        options: {
+          q: 80
+        },
+        files: [{
+          expand: true,
+          cwd: 'source/img',
+          src: ['**/*.{jpg,png}'],
+          dest: 'build/img'
+        }]
+      }
+    },
     svgstore: {
       options: {
         includeTitleElement: false
@@ -122,6 +135,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "imagemin",
+    "cwebp",
     "svgstore",
     "posthtml"
   ]);
